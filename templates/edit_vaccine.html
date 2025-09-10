@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Vaksin</title>
+</head>
+<body>
+  <h1>Edit Vaksin</h1>
+  <form method="POST">
+    Nama Vaksin: <input type="text" name="name" value="{{ vaccine['name'] }}" required>
+    <button type="submit">Update</button>
+  </form>
+  <a href="{{ url_for('index') }}">Kembali</a>
+</body>
+</html>
