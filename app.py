@@ -3,6 +3,7 @@ import sqlite3
 import os
 
 app = Flask(__name__)
+init_db()
 DB_NAME = "recipes.db"
 
 # ================= TEMPLATE HTML =================
