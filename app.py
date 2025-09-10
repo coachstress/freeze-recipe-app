@@ -2,8 +2,8 @@ from flask import Flask, render_template_string, request, redirect, url_for
 import sqlite3
 import os
 
-app = Flask(__name__)
 init_db()
+app = Flask(__name__)
 DB_NAME = "recipes.db"
 
 # ================= TEMPLATE HTML =================
