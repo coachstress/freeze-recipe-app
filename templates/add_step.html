@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tambah Step</title>
+</head>
+<body>
+  <h1>Tambah Step untuk Vaksin {{ vaccine['name'] }}</h1>
+  <form method="POST">
+    Step: <input type="text" name="step" required>
+    <button type="submit">Simpan</button>
+  </form>
+  <a href="{{ url_for('view_vaccine', vaccine_id=vaccine['id']) }}">Kembali</a>
+</body>
+</html>
