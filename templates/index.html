@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daftar Vaksin</title>
+</head>
+<body>
+  <h1>Daftar Vaksin</h1>
+  <a href="{{ url_for('add_vaccine') }}">+ Tambah Vaksin</a>
+  <ul>
+    {% for v in vaccines %}
+      <li>
+        <a href="{{ url_for('view_vaccine', vaccine_id=v['id']) }}">{{ v['name'] }}</a>
+        | <a href="{{ url_for('edit_vaccine', vaccine_id=v['id']) }}">Edit</a>
+        | <a href="{{ url_for('delete_vaccine', vaccine_id=v['id']) }}">Hapus</a>
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
 
