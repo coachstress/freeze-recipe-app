@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Step</title>
+</head>
+<body>
+  <h1>Edit Step</h1>
+  <form method="POST">
+    Step: <input type="text" name="step" value="{{ step['step'] }}" required>
+    <button type="submit">Update</button>
+  </form>
+  <a href="{{ url_for('view_vaccine', vaccine_id=step['vaccine_id']) }}">Kembali</a>
+</body>
+</html>
